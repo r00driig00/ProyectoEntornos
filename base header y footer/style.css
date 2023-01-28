@@ -45,14 +45,7 @@ footer{
     color: white;
     display: flex;
 }
-footer div{
-    display: inline;
-    margin-left: 20px;
-}
-footer img{
-    margin-top: 15px;
-    height: 25%;
-}
+
 footer ul{
     margin-left: 78%;
     list-style-type: none;
