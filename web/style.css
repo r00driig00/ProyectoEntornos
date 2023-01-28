@@ -1,5 +1,5 @@
 header{
-    position:absolute;
+    position:fixed;
     background-color: rgba(204, 249, 252, 0.685);
     display: flex;
     width: 100%;
@@ -15,7 +15,8 @@ header ul{
     list-style-type: none;
 }
 header p{
-    margin-left: 37%;
+    position:fixed;
+    right: 0px;
 }
 button{
     width: 100px;
@@ -37,7 +38,7 @@ button{
 }
 footer{
     background-color: darkgray;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 150px;
     color: white;
@@ -54,8 +55,9 @@ footer img{
     height: 25%;
 }
 footer ul{
-    margin-left: 78%;
     list-style-type: none;
+    position: fixed;
+    right: 15px;
 }
 footer a{
     color: white;
