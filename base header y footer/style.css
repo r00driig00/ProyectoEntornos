@@ -3,26 +3,21 @@ body{
 }
 header{
     position: absolute;
-    background-color: rgb(169, 248, 252);
+    background-color: rgba(204, 249, 252, 0.685);
     display: flex;
     width: 100%;
 }
 header img{
-    width: 150px;
+    margin-top: 15px;
+    margin-left: 30%;
     height: 50px;
-}
-header button{
-    height: 25px;
 }
 header ul{
     list-style-type: none;
 }
-header div{
-    margin-left: 37%;
-}
 header p{
-    margin-left: 35%;
-    float: right;
+    margin-top: 33px;
+    margin-left: 37%;
 }
 footer{
     background-color: darkgray;
