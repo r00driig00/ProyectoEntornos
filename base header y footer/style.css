@@ -39,13 +39,16 @@ header p{
     position:absolute;
     right: 0px;
 }
+
 /*Botones registro y login*/
 button{
-    height: 50px;
-    width: 50px;
+    width: 100px;
     margin: 5px;
     padding:5px;
-    border-radius: 50%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:11px;
     line-height:32px;
     text-transform: uppercase;
 }
