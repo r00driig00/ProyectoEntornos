@@ -24,7 +24,188 @@
             <button type="submit" id="boton2">REGISTRARSE</button>
         </p>
     </header>
-    <main></main>
+
+
+    <main>
+        <br>
+
+        <form action="nuevo.php" method="post">
+        <h3>Formulario de nuevo socio:</h3>
+        <br>
+
+        <p><b><u>Datos personales</u></b></p>
+        <p>
+            <label for="nombre">Nombre: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="text" id="nombre" name="name" placeholder="Nombre"
+            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">&nbsp;&nbsp;
+        
+            <label for="apellidos">Apellidos: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"
+            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
+        </p>
+
+        <p>
+            <label for="nif">DNI/NIF: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="text" id="nif" name="nif" placeholder="DNI" required patter="[A-Z0-9]+" maxlenght="9">&nbsp;&nbsp;
+        
+            <label for="fecha_nacimiento">Fecha de nacimiento<abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="datetime-local" id="date" name="fecha_nacimiento">
+        </p>
+
+        <p>
+            <label for="genero">Género: </label>
+            <select name="género">
+                <option value="m">Masculino</option>
+                <option value="f">Femenino</option>
+                <option value="">Otro</option>
+            </select> 
+        </p>
+        
+        <p>
+            <label for="lugar">Lugar de residencia: </label>
+            <select name="lugar">
+                <optgroup label="Narnia">
+                    <option value="nar">Narnia</option>
+                </optgroup>
+        
+                <optgroup label="Tierra Media">
+                    <option value="lc">La Comarca</option>
+                    <option value="gon">Gondor</option>
+                    <option value="roh">Rohan</option>
+                    <option value="bn">Bosque Negro</option>
+                    <option value="lot">Lothlórien</option>
+                    <option value="riv">Rivendell</option>
+                    <option value="mo">Moria</option>
+                    <option value="mor" selected>Mordor</option>
+                </optgroup>
+        
+                <optgroup label="Fantasia">
+                    <option value="marf">Torre de Marfil</option>
+                    <option value="mh">Mar de Hierba</option>
+                    <option value="mont">Montaña Errante</option>
+                    <option value="per">Perelín</option>
+                    <option value="">Goab</option>
+                    <option value="pl">La Ciudad de Plata</option>
+                    <option value="gent">País de la Gentuza</option>
+                </optgroup>
+
+                <optgroup label="Oceáno Pacífico">
+                    <option value="rly">R'lyeh</option>
+                </optgroup>
+
+                <optgroup label="Terramar">
+                    <option value="nj">Terramar</option>
+                </optgroup>
+
+                <optgroup label="Balnibarbi">
+                    <option value="lap">Laputa</option>
+                    <option value="lap">Lagado</option>
+                    <option value="lap">Lindalino</option>
+                </optgroup>
+
+                <optgroup label="Mundodisco">
+                    <option value="am">Ankh-Morpork</option>
+                    <option value="ass">Culo De Mal Asiento</option>
+                    <option value="vor">Borogravia</option>
+                    <option value="car">Montañas del Carnero</option>
+                </optgroup>
+
+                <optgroup label="Otro">
+                    <option value="nj">Nunca Jamás</option>
+                    <option value="ut">Utopía</option>
+                    <option value="oz">Oz</option>
+                    <option value="marav">El País de las Maravillas</option>
+                    <option value="cam">Camelot</option>
+                    <option value="lil">Lilliput</option>
+                    <option value="bro">Brobdingnag</option>
+                </optgroup>
+           </select>&nbsp;&nbsp;
+        
+            <label for="codigo_postal">Código Postal</label>
+            <input type="text" id="cp" name="codigo_postal" 
+            patter="[0-9]." maxlenght="5">
+        </p>
+        <br>
+
+        <p><b><u>Datos de contacto</u></b></p>
+        <p>
+            <label for="correo">Correo electrónico<abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="email" id="email" name="correo" placeholder="nerdo@invent.com">&nbsp;&nbsp;
+
+            <label for="telefono">Teléfono<abbr title="Este campo es obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            <input type="text" id="telefono" name="telefono" required patter="[0-9]+" minlength="9" maxlength="12">
+        </p>
+        <br>
+
+        <p><b><u>Déjanos conocerte mejor</u></b></p>
+        <p><label for="poster">Sube una foto: </label>
+            <input type="file" id="poster" accept="poster/*">
+            <input type="submit">
+        </p>
+
+        <p>
+            <label for="juegos">¿A qué juegas?</label>
+            <br>
+            <input type="checkbox" id="j1" name="juego1" value="Juegos de mesa">
+            <label for="extra2">Juegos de mesa</label> 
+            <input type="checkbox" id="j2" name="juego2" value="Juegos de rol">
+            <label for="extra2">Juegos de rol</label> 
+            <input type="checkbox" id="j3" name="juego3" value="Wargames">
+            <label for="extra3"><i>Wargames</i></label> 
+            <input type="checkbox" id="j4" name="juego4" value="Juegos de miniaturas">
+            <label for="extra3">Juegos de miniaturas</label>
+            <input type="checkbox" id="j5" name="juego4" value="Living Card Games">
+            <label for="extra3"><i>Living Cards Games</i></label>
+            <input type="checkbox" id="j6" name="juego5" value="Trading Card Games">
+            <label for="extra3"><i>Trading Cards Games</i></label>
+            <input type="checkbox" id="j7" name="juego7" value="Librojuegos">
+            <label for="extra3">Librojuegos</label>
+            <input type="checkbox" id="j8" name="juego8" value="Videojuegos">
+            <label for="extra3">Videojuegos</label>
+        </p>
+
+        <p>
+            <label for="temporada">¿Cómo crees que está jugando está temporada el UD Logroñés?</label>
+            <br>
+            <input type="radio" id="reg" name="temporada" value="Regulinchi">
+            <label for="temporada">Regulinchi</label>
+
+            <input type="radio" id="m" name="temporada" value="Mal">
+            <label for="temporada">Mal</label>
+
+            <input type="radio" id="mm" name="temporada" value="Muy mal">
+            <label for="temporada">Muy mal</label>
+
+            <input type="radio" id="dol" name="temporada" value="Es un dolor verlos jugar">
+            <label for="temporada">Es un dolor verles jugar</label>
+        </p>
+
+        <p>
+            <label for="pokemon">¿Cuál es tu pokémon favorito y por qué es Psyduck?</label>
+            <br>
+            <input type="text" id="pok" name="pokemon" size="70"
+            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,90}">
+        </p>
+
+        <p>
+        <label for="edad">Cómo de viejoven te sientes: </label>
+        <br>
+         Un bebé <input type="range" name="edad" value="5" min="0" max="10" step="1"> Con un pie en la tumba
+        </p>
+        <br>
+
+        <p><b><u>Cuéntanos tu historia</u></b></p>
+        <p>
+            <textarea name="textarea" rows="10" cols="100"></textarea>
+        </p>
+        <br>
+
+        <p><input type="submit" value="Hecho!"></p>
+                
+        </form>
+    </main>
+
+
     <footer>
         <div>
             <img src="images/logo.png" alt="">
