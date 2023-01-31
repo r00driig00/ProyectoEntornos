@@ -30,7 +30,7 @@
         <br>
 
         <form action="nuevo.php" method="post">
-        <h3>Formulario de nuevo socio:</h3>
+        <h3>Únete a MeetProject</h3>
         <br>
 
         <p><b><u>Datos personales</u></b></p>
@@ -62,63 +62,23 @@
         </p>
         
         <p>
-            <label for="lugar">Lugar de residencia: </label>
+            <label for="lugar">Provincia de residencia: </label>
             <select name="lugar">
-                <optgroup label="Narnia">
-                    <option value="nar">Narnia</option>
+                <optgroup label="Asturias">
+                    <option value="ast">Asturias</option>
                 </optgroup>
         
-                <optgroup label="Tierra Media">
-                    <option value="lc">La Comarca</option>
-                    <option value="gon">Gondor</option>
-                    <option value="roh">Rohan</option>
-                    <option value="bn">Bosque Negro</option>
-                    <option value="lot">Lothlórien</option>
-                    <option value="riv">Rivendell</option>
-                    <option value="mo">Moria</option>
-                    <option value="mor" selected>Mordor</option>
+                <optgroup label="Andalucía">
+                    <option value="al">Almería</option>
+                    <option value="ca">Cádiz</option>
+                    <option value="co">Córdoba</option>
+                    <option value="gr">Granada</option>
+                    <option value="lot">Huelva</option>
+                    <option value="ja">Ja&eacute;n</option>
+                    <option value="ma">M&aacute;laga</option>
+                    <option value="se" selected>Sevilla</option>
                 </optgroup>
         
-                <optgroup label="Fantasia">
-                    <option value="marf">Torre de Marfil</option>
-                    <option value="mh">Mar de Hierba</option>
-                    <option value="mont">Montaña Errante</option>
-                    <option value="per">Perelín</option>
-                    <option value="">Goab</option>
-                    <option value="pl">La Ciudad de Plata</option>
-                    <option value="gent">País de la Gentuza</option>
-                </optgroup>
-
-                <optgroup label="Oceáno Pacífico">
-                    <option value="rly">R'lyeh</option>
-                </optgroup>
-
-                <optgroup label="Terramar">
-                    <option value="nj">Terramar</option>
-                </optgroup>
-
-                <optgroup label="Balnibarbi">
-                    <option value="lap">Laputa</option>
-                    <option value="lap">Lagado</option>
-                    <option value="lap">Lindalino</option>
-                </optgroup>
-
-                <optgroup label="Mundodisco">
-                    <option value="am">Ankh-Morpork</option>
-                    <option value="ass">Culo De Mal Asiento</option>
-                    <option value="vor">Borogravia</option>
-                    <option value="car">Montañas del Carnero</option>
-                </optgroup>
-
-                <optgroup label="Otro">
-                    <option value="nj">Nunca Jamás</option>
-                    <option value="ut">Utopía</option>
-                    <option value="oz">Oz</option>
-                    <option value="marav">El País de las Maravillas</option>
-                    <option value="cam">Camelot</option>
-                    <option value="lil">Lilliput</option>
-                    <option value="bro">Brobdingnag</option>
-                </optgroup>
            </select>&nbsp;&nbsp;
         
             <label for="codigo_postal">Código Postal</label>
@@ -127,7 +87,6 @@
         </p>
         <br>
 
-        <p><b><u>Datos de contacto</u></b></p>
         <p>
             <label for="correo">Correo electrónico<abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
             <input type="email" id="email" name="correo" placeholder="nerdo@invent.com">&nbsp;&nbsp;
@@ -137,12 +96,12 @@
         </p>
         <br>
 
-        <p><b><u>Déjanos conocerte mejor</u></b></p>
         <p><label for="poster">Sube una foto: </label>
             <input type="file" id="poster" accept="poster/*">
             <input type="submit">
         </p>
 
+        <!--
         <p>
             <label for="juegos">¿A qué juegas?</label>
             <br>
@@ -201,6 +160,7 @@
         <br>
 
         <p><input type="submit" value="Hecho!"></p>
+        -->
                 
         </form>
     </main>
