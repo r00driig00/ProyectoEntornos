@@ -7,6 +7,7 @@
     <title>MeetProject</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
@@ -29,140 +30,63 @@
     <main>
         <br>
 
-        <form action="nuevo.php" method="post">
-        <h3>Únete a MeetProject</h3>
+        <form id= formulario action="nuevo.php" method="post">
+        <h3>Sign Up</h3>
         <br>
 
-        <p><b><u>Datos personales</u></b></p>
-        <p>
-            <label for="nombre">Nombre: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+        <p class="parrafo" id="p1">
+            <label for="nombre"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
             <input type="text" id="nombre" name="name" placeholder="Nombre"
-            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">&nbsp;&nbsp;
-        
-            <label for="apellidos">Apellidos: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
+            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
+        </p>
+        <br>
+
+        <p class="parrafo" id="p2">
+            <label for="apellidos"><abbr title="Campo obligatorio" aria-label="required" ></abbr></label>
             <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"
             patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
         </p>
+        <br>
 
-        <p>
-            <label for="nif">DNI/NIF: <abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
-            <input type="text" id="nif" name="nif" placeholder="DNI" required patter="[A-Z0-9]+" maxlenght="9">&nbsp;&nbsp;
-        
-            <label for="fecha_nacimiento">Fecha de nacimiento<abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
-            <input type="datetime-local" id="date" name="fecha_nacimiento">
-        </p>
-
-        <p>
-            <label for="genero">Género: </label>
-            <select name="género">
-                <option value="m">Masculino</option>
-                <option value="f">Femenino</option>
-                <option value="">Otro</option>
-            </select> 
-        </p>
-        
-        <p>
-            <label for="lugar">Provincia de residencia: </label>
-            <select name="lugar">
-                <optgroup label="Asturias">
-                    <option value="ast">Asturias</option>
-                </optgroup>
-        
-                <optgroup label="Andalucía">
-                    <option value="al">Almería</option>
-                    <option value="ca">Cádiz</option>
-                    <option value="co">Córdoba</option>
-                    <option value="gr">Granada</option>
-                    <option value="lot">Huelva</option>
-                    <option value="ja">Ja&eacute;n</option>
-                    <option value="ma">M&aacute;laga</option>
-                    <option value="se" selected>Sevilla</option>
-                </optgroup>
-        
-           </select>&nbsp;&nbsp;
-        
-            <label for="codigo_postal">Código Postal</label>
-            <input type="text" id="cp" name="codigo_postal" 
-            patter="[0-9]." maxlenght="5">
+        <p class="parrafo" id="p3">
+            <label for="nickname"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+            <input type="text" id="nickname" name="nickname" placeholder="Nombre de usuario"
+            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
         </p>
         <br>
 
-        <p>
-            <label for="correo">Correo electrónico<abbr title="Campo obligatorio" aria-label="required" style="color: red">*</abbr></label>
-            <input type="email" id="email" name="correo" placeholder="nerdo@invent.com">&nbsp;&nbsp;
-
-            <label for="telefono">Teléfono<abbr title="Este campo es obligatorio" aria-label="required" style="color: red">*</abbr></label>
-            <input type="text" id="telefono" name="telefono" required patter="[0-9]+" minlength="9" maxlength="12">
+        <p class="parrafo" id="p4">
+            <label for="correo"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+            <input type="email" id="email" name="correo" placeholder="Email">
         </p>
         <br>
 
-        <p><label for="poster">Sube una foto: </label>
-            <input type="file" id="poster" accept="poster/*">
-            <input type="submit">
-        </p>
-
-        <!--
-        <p>
-            <label for="juegos">¿A qué juegas?</label>
-            <br>
-            <input type="checkbox" id="j1" name="juego1" value="Juegos de mesa">
-            <label for="extra2">Juegos de mesa</label> 
-            <input type="checkbox" id="j2" name="juego2" value="Juegos de rol">
-            <label for="extra2">Juegos de rol</label> 
-            <input type="checkbox" id="j3" name="juego3" value="Wargames">
-            <label for="extra3"><i>Wargames</i></label> 
-            <input type="checkbox" id="j4" name="juego4" value="Juegos de miniaturas">
-            <label for="extra3">Juegos de miniaturas</label>
-            <input type="checkbox" id="j5" name="juego4" value="Living Card Games">
-            <label for="extra3"><i>Living Cards Games</i></label>
-            <input type="checkbox" id="j6" name="juego5" value="Trading Card Games">
-            <label for="extra3"><i>Trading Cards Games</i></label>
-            <input type="checkbox" id="j7" name="juego7" value="Librojuegos">
-            <label for="extra3">Librojuegos</label>
-            <input type="checkbox" id="j8" name="juego8" value="Videojuegos">
-            <label for="extra3">Videojuegos</label>
-        </p>
-
-        <p>
-            <label for="temporada">¿Cómo crees que está jugando está temporada el UD Logroñés?</label>
-            <br>
-            <input type="radio" id="reg" name="temporada" value="Regulinchi">
-            <label for="temporada">Regulinchi</label>
-
-            <input type="radio" id="m" name="temporada" value="Mal">
-            <label for="temporada">Mal</label>
-
-            <input type="radio" id="mm" name="temporada" value="Muy mal">
-            <label for="temporada">Muy mal</label>
-
-            <input type="radio" id="dol" name="temporada" value="Es un dolor verlos jugar">
-            <label for="temporada">Es un dolor verles jugar</label>
-        </p>
-
-        <p>
-            <label for="pokemon">¿Cuál es tu pokémon favorito y por qué es Psyduck?</label>
-            <br>
-            <input type="text" id="pok" name="pokemon" size="70"
-            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,90}">
-        </p>
-
-        <p>
-        <label for="edad">Cómo de viejoven te sientes: </label>
-        <br>
-         Un bebé <input type="range" name="edad" value="5" min="0" max="10" step="1"> Con un pie en la tumba
+        <p class="parrafo" id="p5">
+            <label for="contraseña"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+            <input type="password" name="contraseña" placeholder="Contraseña" id="ps1" minlength="8"
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         </p>
         <br>
 
-        <p><b><u>Cuéntanos tu historia</u></b></p>
-        <p>
-            <textarea name="textarea" rows="10" cols="100"></textarea>
+        <p class="parrafo" id="p6">
+            <label for="contraseña2"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+            <input type="password" name="contraseña2" placeholder="Repetir contraseña" id="ps2" minlength="8"
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         </p>
         <br>
 
-        <p><input type="submit" value="Hecho!"></p>
-        -->
-                
+        <p class="parrafo" id="p7">
+            <input type="checkbox" id="casilla1" name="casilla1" >
+            <label for="terminos"><abbr title="Marca esta casilla" aria-label="required">
+                Estoy de acuerdo con los <a href="#">términos y condiciones</a> de MeetProject y acepto su <a href="#">política de privacidad</a>.
+            </abbr></label>
+        </p>
+        <br>
+
+        <p class="parrafo" id="p8"><input type="submit" value="Enviar"></p>
+
         </form>
+
     </main>
 
 
