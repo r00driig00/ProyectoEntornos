@@ -31,59 +31,47 @@
         <br>
 
         <form id= formulario action="nuevo.php" method="post">
-        <h3>Sign Up</h3>
+        <h3>Soy nuevo</h3>
+        <br>
+        
+        <p><a href="https://www.google.com/"><img src="images/google.png" alt=""></a></p>
         <br>
 
         <p class="parrafo" id="p1">
-            <label for="nombre"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
-            <input type="text" id="nombre" name="name" placeholder="Nombre"
-            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
-        </p>
-        <br>
-
-        <p class="parrafo" id="p2">
-            <label for="apellidos"><abbr title="Campo obligatorio" aria-label="required" ></abbr></label>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"
-            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
-        </p>
-        <br>
-
-        <p class="parrafo" id="p3">
-            <label for="nickname"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
-            <input type="text" id="nickname" name="nickname" placeholder="Nombre de usuario"
-            patter="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,48}">
-        </p>
-        <br>
-
-        <p class="parrafo" id="p4">
             <label for="correo"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
             <input type="email" id="email" name="correo" placeholder="Email">
         </p>
         <br>
 
-        <p class="parrafo" id="p5">
+        <p class="parrafo" id="p2">
+        <label for="telefono"><abbr title="Este campo es obligatorio" aria-label="required"></abbr></label>
+            <input type="text" id="telefono" name="telefono" placeholder="Teléfono +34..." required patter="[0-9]+" minlength="9" maxlength="12">
+        </p>
+        <br>
+
+        <p class="parrafo" id="p3">
             <label for="contraseña"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
             <input type="password" name="contraseña" placeholder="Contraseña" id="ps1" minlength="8"
             required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         </p>
         <br>
 
-        <p class="parrafo" id="p6">
+        <p class="parrafo" id="p4">
             <label for="contraseña2"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
             <input type="password" name="contraseña2" placeholder="Repetir contraseña" id="ps2" minlength="8"
             required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         </p>
         <br>
 
-        <p class="parrafo" id="p7">
+        <p class="parrafo" id="p5">
             <input type="checkbox" id="casilla1" name="casilla1" >
-            <label for="terminos"><abbr title="Marca esta casilla" aria-label="required">
+            <label for="terminos"><abbr title="Marca esta casilla" aria-label="required"></abbr>
                 Estoy de acuerdo con los <a href="#">términos y condiciones</a> de MeetProject y acepto su <a href="#">política de privacidad</a>.
-            </abbr></label>
+            </label>
         </p>
         <br>
 
-        <p class="parrafo" id="p8"><input type="submit" value="Enviar"></p>
+        <p class="parrafo" id="p6"><button type="submit" id="boton3">JOIN UP</button></p>
 
         </form>
 
