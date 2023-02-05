@@ -170,10 +170,11 @@ button{
 
 /* SECCION */
 main{
-    display: flex;
-    justify-content: center;
+    display: inline;
 }
+/* PRIMERA */
 #ofertas{
+    margin:10px auto;
     background-color: var(--colorfondo);
     width: 65%;
     padding: 15px;
@@ -181,9 +182,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     height: 25%;
+    box-shadow: 0 0 6px 0 #0088bb;
 }
 #ofertas article{
-    border: 3px double blue;
+    border: 3px double #0088bb;
     border-radius: 20px 20px;
     padding: 15px;
     width: 45%;
@@ -206,17 +208,47 @@ main{
     color:var(--colorenlaceshover);
     float: right;
 }
-
+/* SEGUNDA */
+#aboutus{
+    background-color: var(--colorfondo);
+    width: 80%;
+    margin-top: 50px;
+    
+    padding: 15px;
+    display: flex;
+    height: 25%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 6px 0 #0088bb;
+}
+#aboutus img{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+#aboutus article{
+    padding-left: 15px;
+} 
+#aboutus article a{
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+#aboutus article a:hover{
+    text-decoration: none;
+    color:var(--colorenlaceshover);
+    float: right;
+}
 /*footer*/
 footer{
     background-color: var(--colorfondofooter);
     width: 100%;
     height: 150px;
     color: var(--colorfondooscuro);
-    display: flex;
     left: 0px;
     bottom: 0px;
-    margin-top: auto;
+    margin-top: 50px;
+    position: relative;
 }
 footer div{
     display: inline;
