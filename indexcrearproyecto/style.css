@@ -5,13 +5,13 @@
 }
 
 :root{
-    --colortextos: rgb(87, 87, 87);
-    --colorbotones:rgb(0, 156, 177);
-    --colorfondo:rgba(204, 249, 252, 0.685);
-    --colortitulos:rgb(48, 138, 173);
-    --colorfondofooter:darkgray;
-    --colorfondooscuro:rgb(255, 255, 255);
-
+    --colortextos: #575757;
+    --colorbotones:#009cb1;
+    --colorfondo:#ccf9fcaf;
+    --colortitulos:#308aad;
+    --colorfondofooter:#a9a9a9;
+    --colorfondooscuro:#ffffff;
+    --colortitulo: #537c94;
 
 }
 
@@ -202,35 +202,50 @@ footer a{
 }
 
 /*Main*/
-main{
-    margin-top: 125px;
-}
-
-.titulo-seccion{
+h1{
+    margin: 15px;
+    color:var(--colortitulo);
+    font-size: normal;
     text-align: center;
-    font-size: 35px;
-    color: var(--colortitulos);
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin: 50px auto;
 }
-.menu{
-    padding-top: 100px;
-    display: flex;
+form{
+    height: 30rem;
+    background-color: white;
+    margin: 80px auto;
+    width: 800px;
+    padding: 25px;
+    border: 1px solid var(--colortitulo);
     justify-content: center;
-    flex-wrap: wrap;
 }
-.menu a{
-    text-decoration: none;
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
 }
-.opcionmenu{
-    font-size: 20px;
-    width: 10em;
-    height: 10em;
-    background-image: url(images/menu_usuario_01.png);
-    background-size: cover;
-    background-position: center;
+.campo_label{
+    flex: 0 0 9rem;
+    text-align:left;
+    padding-right: 2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+.campo_field{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    font-family: 'PT Sans', sans-serif;
+}
+.campo_field textarea{
+    height: 20rem;
+}
+textarea {
+    resize: none;
+}
+input[type=submit]{
+    background-color: var(--colorbotones);
     color:var(--colorfondooscuro);
+    font-family: 'PT Sans', sans-serif;
+    padding: 15px;
+    margin: 50px auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 50px;
 }
