@@ -321,6 +321,12 @@ p{
   .input:focus {
     border: 2px solid var(--colortitulos);
   }
+
+/* Pago valido */
+.validado{
+    margin-top: 300px;
+    height: 465px;
+}
 /*footer*/
 footer{
     background-color: var(--colorfondofooter);
