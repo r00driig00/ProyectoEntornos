@@ -230,6 +230,7 @@ article{
     background-color: white;
     padding: 5px;
     margin: 10px;
+    border: inset 2.5px var(--colorfondo);
 }
 article:first-of-type{
     margin-top: 35px;
