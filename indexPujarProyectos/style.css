@@ -11,6 +11,8 @@
     --colortitulos:rgb(48, 138, 173);
     --colorfondofooter:darkgray;
     --colorfondooscuro:rgb(255, 255, 255);
+
+
 }
 
 /* header */
@@ -37,7 +39,6 @@ header p{
     position:absolute;
     right: 0px;
 }
-
 /*ABRIRCERRAR*/
 input#abrir-cerrar {
     visibility:hidden;
@@ -147,29 +148,36 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 
 /*Botones registro y login*/
 button{
-    width: 100px;
+    height: 50px;
+    width: 50px;
     margin: 5px;
     padding:5px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    font-size:11px;
+    border-radius: 50%;
     line-height:32px;
     text-transform: uppercase;
 }
 #boton1{
-    color: rgb(0, 156, 177);
+    width: 40px;
+    height: 40px;
+    background-image: url(images/usuario.png);
+    background-size: cover;
+    background-position: center;
+    color:var(--colorfondooscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-top: 10px;
+    border: 2px solid black;
 }
-#boton2{
-    background-color: rgb(0, 156, 177);
-    color: aliceblue;
-}
+
 /*footer*/
 footer{
     background-color: var(--colorfondofooter);
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 150px;
     color: var(--colorfondooscuro);
     display: flex;
     left: 0px;
@@ -194,22 +202,24 @@ footer a{
 }
 
 
+
 /*main*/
 body {
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
+main h1 {
     margin: 2%;
     margin-bottom: 2%;
-    color: var(--colortextos);
-    font-size: 130%;
+    color: var(--colortitulos);
+    font-size: normal;
     font-weight: bolder;
     letter-spacing: 1em;
     text-align: center;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 20px;
 }
 
 main p{
@@ -219,20 +229,18 @@ main p{
     width: 30%;
     height: 300px;
     border: var(--colortextos) solid 3px;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-style: double;
-    border-width: 0.2em;
+    border-style: collapse;
+    border-width: 0.1em;
     margin-left: 2%;
     margin-right: 1%;
     margin-bottom: 3%;
-    padding: 1%;
+    padding: 15px;
     background-color: var(--colorfondo);;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     text-align: justify;
-    
+    box-shadow: 0px 10px 10px var(--colortextos);
 }
 
 
@@ -245,23 +253,27 @@ p:last-child{
     margin-bottom: 100px;
 }
 
-main p span {
-    font-size: 20px;
+span.app {
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 10px;
     color: rgb(0, 81, 92);
     background-color: aliceblue;
-    border: var(--colortextos) solid 1.5px;
-    border-radius: 5px;
+    border: var(--colortitulos) solid 1.5px;
+    border-radius: 50%;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    margin: 5px;
     padding: 0.5em;
-    font-size:11px;
-    line height: 2em;;
+    font-size:15px;
+    line-height: 2em;;
     text-transform: uppercase;
+    box-shadow: 0 0 5px 0 var(--colortitulos) inset;
 }
+#puturru{
+    font-style: italic;
+}
+
 
 .anuncio {
     text-decoration: none;
