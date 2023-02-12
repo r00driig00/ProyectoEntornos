@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"> </span><span class="cerrar"> </span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html#verofertas">Ver ofertas</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="../indexcontacto/index.html">Contacto</a></li>
+            </ul>
+        </div>
+        <img src="images/logo.png" alt="">
+        <p id="boton1">
+            <div class="boton1"></div>
+        </p>
+    </header>
+
+    <main>
+        <h1>Revisar encargos</h1>
+
+    
+      <div class="page-content">
+        <div class="header">Tareas actuales</div>
+
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-1" />
+            <label class="category" for="opt-1">Todo</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
+            <label class="category" for="opt-2">Importante</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-3" />
+            <label class="category" for="opt-3">Notas</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-4" />
+            <label class="category" for="opt-4">Enlaces</label>
+          </div>
+        </div>
+
+
+        <div class="tasks-wrapper">
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-1" checked />
+            <label for="item-1">
+              <span class="label-text">Página web carnicería con temática Ghibli: Porco Rosso.</span>
+            </label>
+            <span class="tag approved">Aprobado</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-2" checked />
+            <label for="item-2">
+              <span class="label-text">Clon de ChatGPT.</span>
+            </label>
+            <span class="tag progress">En progreso</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-3" />
+            <label for="item-3">
+              <span class="label-text">App que no deje rastro para hackear las notas de instituto.</span>
+            </label>
+            <span class="tag review">En revisión</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-4" />
+            <label for="item-4">
+              <span class="label-text">Aplicación movil generador de memes.</span>
+            </label>
+            <span class="tag progress">En revisión</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-5" />
+            <label for="item-5">
+              <span class="label-text">Desarrollo código para que <span clas="cursiva">Moodle</span> funcione bien.</span>
+            </label>
+            <span class="tag approved">Aprobado</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-6" />
+            <label for="item-6">
+              <span class="label-text">Aiuda! El servidor ha colapsado con mi nueva web. Revisión de código.</span>
+            </label>
+            <span class="tag review">En revisión</span>
+          </div>
+          <div class="header upcoming">Próximas tareas</div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-7" />
+            <label for="item-7">
+              <span class="label-text">IA aspiradora robot + función premium que juegue con el gato.</span>
+            </label>
+            <span class="tag waiting">Esperando aprobación</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-8" />
+            <label for="item-8">
+              <span class="label-text">App que me haga el proyecto de entornos.</span>
+            </label>
+            <span class="tag waiting">Esperando aprobación</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-9" />
+            <label for="item-9">
+              <span class="label-text">Otra app para que me haga el proyecto de bases de datos.</span>
+            </label>
+            <span class="tag waiting">Esperando aprobación</span>
+          </div>
+          <div class="task">
+            <input class="task-item" name="task" type="checkbox" id="item-10" />
+            <label for="item-10">
+              <span class="label-text">Desarrollo IA para nueva generación Tamagotchi.</span>
+            </label>
+            <span class="tag waiting">Esperando aprobación</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="">
+            <p>&copy;BEARsion100 2023</p>
+        </div>
+        
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
