@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetProject - Pagar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"> </span><span class="cerrar"> </span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html#verofertas">Ver ofertas</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="../indexcontacto/index.html">Contacto</a></li>
+            </ul>
+        </div>
+        <img src="images/logo.png" alt="">
+        <p id="boton1">
+            <div class="boton1">
+
+            </div>
+        </p>
+    </header>
+    <main>
+        <div class="pago">
+            <form action="pagovalidado.html" class="form">
+                <h1 class="title">Pago</h1>
+
+                <div class="inputContainer">
+                  <input type="email" class="input" placeholder="Email">
+                  <label for="" class="label">Email</label>
+                </div>
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="Nombre">
+                  <label for="" class="label">Nombre</label>
+                </div>
+          
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="Apellidos">
+                  <label for="" class="label">Apellidos</label>
+                </div>
+          
+                <div class="inputContainer">
+                  <input type="number" class="input" placeholder="Número tarjeta de credito" pattern="[0-9]{13,16}">
+                  <label for="" class="label">Metodo de pago</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="Cupón de descuento" pattern="[A-Z]{5}">
+                    <label for="" class="label">Cupón de descuento</label>
+                  </div>
+                <input type="submit" class="submitBtn" value="Pagar">
+              </form>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="">
+            <p>&copy;BEARsion100 2023</p>
+        </div>
+        
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
