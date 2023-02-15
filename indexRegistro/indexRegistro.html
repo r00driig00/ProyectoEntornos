@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"> </span><span class="cerrar"> </span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html#verofertas">Ver ofertas</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="../indexcontacto/index.html">Contacto</a></li>
+            </ul>
+        </div>
+        <img src="images/logo.png" alt="">
+        <p id="boton1">
+            <a href="../indexlogin/menu_eleccion_login.html"><button type="submit" id="boton1">ENTRAR</button></a>
+            <button type="submit" id="boton2">REGISTRARSE</button>
+        </p>
+    </header>
+
+    <main>
+        <main>
+            <br>
+    
+            <form id= formulario action="nuevo.php" method="post">
+            <h3>Soy nuevo</h3>
+            <br>
+            
+            <p><a href="https://www.google.com/"><img src="images/google.png" alt=""></a></p>
+            <br>
+    
+            <p class="parrafo" id="p1">
+                <label for="correo"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+                <input type="email" id="email" name="correo" placeholder="Email">
+            </p>
+            <br>
+    
+            <p class="parrafo" id="p2">
+            <label for="telefono"><abbr title="Este campo es obligatorio" aria-label="required"></abbr></label>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono +34..." required patter="[0-9]+" minlength="9" maxlength="12">
+            </p>
+            <br>
+    
+            <p class="parrafo" id="p3">
+                <label for="contraseña"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+                <input type="password" name="contraseña" placeholder="Contraseña" id="ps1" minlength="8"
+                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </p>
+            <br>
+    
+            <p class="parrafo" id="p4">
+                <label for="contraseña2"><abbr title="Campo obligatorio" aria-label="required"></abbr></label>
+                <input type="password" name="contraseña2" placeholder="Repetir contraseña" id="ps2" minlength="8"
+                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </p>
+            <br>
+    
+            <p class="parrafo" id="p5">
+                <input type="checkbox" id="casilla1" name="casilla1" >
+                <label for="terminos"><abbr title="Marca esta casilla" aria-label="required"></abbr>
+                    Estoy de acuerdo con los <a href="#">términos y condiciones</a> de MeetProject y acepto su <a href="#">política de privacidad</a>.
+                </label>
+            </p>
+            <br>
+    
+            <p class="parrafo" id="p6"><button type="submit" id="boton3">JOIN UP</button></p>
+    
+            </form>
+    
+        </main>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="">
+            <p>&copy;BEARsion100 2023</p>
+        </div>
+        
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
