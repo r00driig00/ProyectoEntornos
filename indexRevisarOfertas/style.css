@@ -253,6 +253,7 @@ section {
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .container .card:hover .face.face1 {
