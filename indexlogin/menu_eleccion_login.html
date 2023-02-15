@@ -9,14 +9,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#verofertas">Ver ofertas</a></li>
-                <li>About us</li>
-                <li>Contacto</li>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"> </span><span class="cerrar"> </span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html#verofertas">Ver ofertas</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="../indexcontacto/index.html">Contacto</a></li>
             </ul>
-        </nav>
-        <img src="images/logo.png" alt="">
+        </div>
+        <a href="../indexprincipal/index.html"><img src="images/logo.png" alt=""></a>
         <p id="boton1">
             <div class="boton1">
 
@@ -24,23 +26,38 @@
         </p>
     </header>
     <main>
-        <section class="contenedor">
-            <h2 class="titulo-seccion">Indica tu perfil de usuario</h2>
-            <div class="menu">
-                
-                <a href="">
-                    <div class="opcionmenu">
-                        <h3>Usuario</h3>
+        <div class="login">
+            <form action="pagovalidado.html" class="form">
+                <h1 class="title">Inicio sesión</h1>
+
+                <div class="inputContainer">
+                  <input type="email" class="input" placeholder="Email">
+                  <label for="" class="label">Email</label>
+                </div>
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="Nombre">
+                  <label for="" class="label">Nombre</label>
+                </div>
+          
+                <div class="inputContainer">
+                  <input type="password" class="input" placeholder="Contraseña">
+                  <label for="" class="label">Contraseña</label>
+                </div>
+                <div class="selector">
+                    <div class="toggle-border">
+                        <input id="one" type="checkbox">
+                        <label for="one">
+                          <div class="handle"></div>
+                        </label>
                     </div>
-                </a>
-                
-                <a href="">
-                    <div class="opcionmenu">
-                        <h3>Empresa</h3>
-                    </div>
-                </a>
-            </div>
-        </section>     
+                </div>
+
+
+                <input type="submit" class="submitBtn" value="Iniciar sesión">
+
+              </form>
+
+        </div> 
     </main>
     <footer>
         <div>
