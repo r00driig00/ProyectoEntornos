@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"> </span><span class="cerrar"> </span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html#verofertas">Ver ofertas</a></li>
+                <li><a href="index.html#aboutus">About us</a></li>
+                <li><a href="../indexcontacto/index.html">Contacto</a></li>
+            </ul>
+        </div>
+        <img src="images/logo.png" alt="">
+        <p id="boton1">
+            <a href="../indexlogin/menu_eleccion_login.html"><button type="submit" id="boton1">ENTRAR</button></a>
+            <button type="submit" id="boton2">REGISTRARSE</button>
+        </p>
+    </header>
+
+    <main>
+        <main>
+            <div class="login">
+                <form action="pagovalidado.html" class="form">
+                    <h1 class="title">Registrarse</h1>
+    
+                    <div class="inputContainer">
+                      <input type="email" class="input" placeholder="Email">
+                      <label for="" class="label">Email</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="text" id="telefono" name="telefono" placeholder="Teléfono +34..." required patter="[0-9]+" minlength="9" maxlength="12" class="input">
+                        <label for="telefono" class="label">Telefono</label>
+                      </div>
+                    <div class="inputContainer">
+                      <input type="text" class="input" placeholder="Nombre">
+                      <label for="" class="label">Nombre</label>
+                    </div>
+              
+                    <div class="inputContainer">
+                        <input type="password" class="input" name="contraseña" placeholder="Contraseña" id="ps1" minlength="8" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        <label for="" class="label">Contraseña</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="password" class="input" name="contraseña" placeholder="Confirmar contraseña" id="ps1" minlength="8" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        <label for="" class="label">Confirmar contraseña</label>
+                    </div>
+                    <div class="imagen">
+                        <a href="https://www.google.com/"><img src="images/google.png" alt="" class="imagen"></a>
+                    </div>
+                    <div class="container">
+                        <input type="checkbox" id="cbx2" style="display: none;" >
+                        <label for="cbx2" class="check">
+                            <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                            <p class ="terminos">Estoy de acuerdo con los <a href="#">términos y condiciones</a> de MeetProject y acepto su <a href="#">política de privacidad</a>.</p>
+                        </label>
+                    </div>
+    
+                    <input type="submit" class="submitBtn" value="Registrarse">
+    
+                  </form>
+    
+            </div>         
+                
+        
+                <p class="parrafo" id="p5">
+                    <input type="checkbox" id="casilla1" name="casilla1" >
+                    <label for="terminos"><abbr title="Marca esta casilla" aria-label="required"></abbr>
+                        Estoy de acuerdo con los <a href="#">términos y condiciones</a> de MeetProject y acepto su <a href="#">política de privacidad</a>.
+                    </label>
+                </p>
+                <br>
+        
+                <p class="parrafo" id="p6"><button type="submit" id="boton3">JOIN UP</button></p>
+    
+            </form>
+    
+        </main>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="">
+            <p>&copy;BEARsion100 2023</p>
+        </div>
+        
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
