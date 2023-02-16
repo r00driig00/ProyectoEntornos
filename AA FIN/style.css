@@ -173,7 +173,7 @@ button{
 }
 
 
-
+/* INDEX PRINCIPAL */
 /* PRIMERA */
 #ofertas{
     margin:10px auto;
@@ -241,7 +241,7 @@ button{
     float: right;
 }
 
-/* FORM LOGIN */
+/* FORM LOGIN Y REGISTER */
 .login {
     display: flex;
     justify-content: center;
@@ -285,7 +285,7 @@ button{
     z-index: 1;
   }
   
-  /* Hide the placeholder texts (a) */
+  /* HOVER A */
   
   ::placeholder {
     color: #DADCE0;
@@ -329,7 +329,7 @@ button{
   .input:focus {
     border: 2px solid var(--colortitulos);
   }
-/* EMPRESA USUARIO */
+/* SELECTOR EMPRESA USUARIO */
 
     .selector{
         
@@ -482,11 +482,11 @@ button{
   }
   
   .check:hover svg {
-    stroke: var(--accent-color, #5b81eb);
+    stroke: var(--accent-color, #ffc400);
   }
   
   #cbx2:checked + .check svg {
-    stroke: var(--accent-color, #5b81eb);
+    stroke: var(--accent-color, #ffc400);
   }
   
   #cbx2:checked + .check svg path {
