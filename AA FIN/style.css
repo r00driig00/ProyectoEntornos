@@ -416,7 +416,22 @@ button{
 
    /* CHECK BOX */
 
-
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.terminos{
+    text-align: left;
+    font-size: small;
+    margin-left: 10px ;
+}
+.terminos > a {
+    color: var(--colortitulos);
+}
+.terminos > a:hover{
+    color:var(--colorenlaceshover);
+}
 .check {
     cursor: pointer;
     position: relative;
@@ -467,11 +482,11 @@ button{
   }
   
   .check:hover svg {
-    stroke: var(--accent-color, #a3e583);
+    stroke: var(--accent-color, #5b81eb);
   }
   
   #cbx2:checked + .check svg {
-    stroke: var(--accent-color, #a3e583);
+    stroke: var(--accent-color, #5b81eb);
   }
   
   #cbx2:checked + .check svg path {
