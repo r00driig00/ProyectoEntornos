@@ -174,7 +174,7 @@ button{
 #usuario{
     width: 40px;
     height: 40px;
-    background-image: url(images/usuario.png);
+    background-image: url(../images/usuario.png);
     background-size: cover;
     background-position: center;
     color:var(--colorfondooscuro);
@@ -199,26 +199,26 @@ button{
     flex-wrap: wrap;
     box-shadow: 0 0 6px 0 #0088bb;
 }
-#ofertas article{
+.ofertasPrincipal{
     border: 3px double #0088bb;
     border-radius: 20px 20px;
     padding: 15px;
     width: 45%;
     margin: 10px;
 }
-#ofertas article h2{
+.ofertasPrincipal h2{
     font-size: 16px;
     text-decoration: underline;
 }
-#ofertas article p{
+.ofertasPrincipal p{
     padding: 3px;
 }
-#ofertas article a{
+.ofertasPrincipal a{
     text-decoration: none;
     color: black;
     float: right;
 }
-#ofertas article a:hover{
+.ofertasPrincipal a:hover{
     text-decoration: none;
     color:var(--colorenlaceshover);
     float: right;
@@ -231,7 +231,7 @@ button{
     
     padding: 15px;
     display: flex;
-    height: 25%;
+    
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 0 6px 0 #0088bb;
@@ -241,18 +241,20 @@ button{
     height: 200px;
     float: left;
 }
-#aboutus article{
+.aboutUs{
     padding-left: 15px;
 } 
-#aboutus article a{
+.aboutUs a{
     text-decoration: none;
     color: black;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
-#aboutus article a:hover{
+.aboutUs a:hover{
     text-decoration: none;
     color:var(--colorenlaceshover);
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* FORM LOGIN Y REGISTER */
@@ -260,7 +262,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
+
   .form {
     background-color: white;
     width: 400px;
@@ -430,10 +434,11 @@ button{
 
    /* CHECK BOX */
 
-.container{
+.terminosycondiciones{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    
 }
 .terminos{
     text-align: left;
@@ -519,12 +524,11 @@ button{
 
 /*MENU USUARIO*/
 
-.menu_usuario{
+.menus{
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    height: 60vh;
 }
 .titulo-seccion{
     text-align: center;
@@ -544,7 +548,7 @@ button{
     font-size: 20px;
     width: 10em;
     height: 10em;
-    background-image: url(images/menu_usuario_01.png);
+    background-image: url(../images/menu_usuario_01.png);
     background-size: cover;
     background-position: center;
     color:var(--colorfondooscuro);
@@ -567,34 +571,522 @@ button{
     border: 1px solid var(--colortitulo);
     justify-content: center;
 }
-.crearproyecto > .campo{
+.campo{
     display: flex;
     margin-bottom: 2rem;
 }
-.crearproyecto > .campo_label{
+.campo_label{
     flex: 0 0 9rem;
     text-align:left;
     padding-right: 2rem;
     font-family: 'PT Sans', sans-serif;
 }
-.crearproyecto > .campo_field{
+.campo_field{
     flex: 1;
     border: 1px solid #e1e1e1;
     font-family: 'PT Sans', sans-serif;
 }
-.crearproyecto > .campo_field textarea{
+.campo_field textarea{
     height: 20rem;
 }
-.crearproyecto > textarea {
+textarea {
     resize: none;
 }
-.crearproyecto >  input[type=submit]{
+input[type=submit]{
     background-color: var(--colorbotones);
     color:var(--colorfondooscuro);
     font-family: 'PT Sans', sans-serif;
     padding: 15px;
     margin: 50px auto;
     display: flex;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+}
+
+/* ACEPTAR PROYECTO */
+.aceptarempresas {
+    margin: 15px auto;
+    width: 65%;
+    height: 600px;
+    justify-content: center;
+    height: 633px;
+}
+
+.ofertasAceptarEmpresa{
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 6px 0 #0088bb;
+    overflow: auto;
+    float: left;
+    justify-content: center;
+    background-color: var(--colorfondo);
+    font-family:'Courier New', Courier, monospace;
+}
+.ofertasAceptarEmpresa h2{
+    color:var(--colortitulos);
+    font-size: smaller;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p{
+    margin-top: 10px;
+}
+.puja{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.aceptar{
+    display: block;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 3px;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+}
+.aceptar:hover{
+    background-color: var(--colorfondofooter);
+    color: var(--colorfondooscuro);
+}
+
+/* PUJAR PROYECTOS */
+.pujarProyectos {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.pujarProyectos p{
+    display: grid;
+    float:left;
+    overflow: auto;
+    width: 30%;
+    height: 300px;
+    border: var(--colortextos) solid 3px;
+    border-style: collapse;
+    border-width: 0.1em;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    padding: 15px;
+    background-color: var(--colorfondo);;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    box-shadow: 0px 10px 10px var(--colortextos);
+}
+
+
+.parrafoPujas::first-letter{
+    font-size: 2em;
+    line-height:1.5em;
+}
+
+.parrafoPujas:last-child{
+    margin-bottom: 100px;
+}
+
+span.app {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(0, 81, 92);
+    background-color: aliceblue;
+    border: var(--colortitulos) solid 1.5px;
+    border-radius: 50%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 0.5em;
+    font-size:15px;
+    line-height: 2em;;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px 0 var(--colortitulos) inset;
+}
+#puturru{
+    font-style: italic;
+}
+
+
+.anuncio {
+    text-decoration: none;
+    color: rgb(0, 81, 92);
+    text-transform:capitalize;
+}
+
+
+.anuncio:hover{
+    font-size: 1.5em;
+}
+
+/* REVISAR OFERTAS */
+
+.revisarOfertas {
+    margin: 0;
+    padding: 0;
+    min-height: 75vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: consolas;
+  }
+  
+  .container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container .card {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+  }
+  
+  .container .card .face.face1 {
+    position: relative;
+    background: var(--colortitulos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container .card:hover .face.face1 {
+    background: var(--colorfondo);
+    transform: translateY(0);
+  }
+  
+  .container .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+  
+  .container .card:hover .face.face1 .content {
+    opacity: 1;
+  }
+  
+  .container .card .face.face1 .content img {
+    max-width: 100px;
+  }
+  
+  .container .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: var(--colorfondooscuro);
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px var(--colortextos);
+    transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2 {
+    transform: translateY(0);
+  }
+  
+  .container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--colortextos);
+    padding: 5px;
+    border: 1px solid var(--colortitulos);
+    border-radius: 20px;
+  }
+  
+  .container .card .face.face2 .content a:hover {
+    background: var(--colortextos);
+    color: #fff;
+  }
+
+  /* REVISAR ENCARGOS */
+  .revisarEncargos {
+    margin: 15px;
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    background-color:#fff;
+  }
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px 20px 0 20px;
+  }
+  
+  .page-content .header {
+    font-size: 26px;
+    color: var(--colortitulos);
+    margin-top: 30px;
+  }
+  
+  .content-categories {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  .nav-item {
+    display: none;
+  }
+  
+  .category {
+    font-weight: 500;
+    color: var(--secondary-color);
+    border-bottom: 1px solid #ddd;
+    transition: 0.4s ease-in;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+  
+  #opt-1:checked + label,
+  #opt-2:checked + label,
+  #opt-3:checked + label,
+  #opt-4:checked + label {
+    color: var(--colortitulos);
+    border-bottom: 2px solid var(--checkbox-color);
+  }
+  
+  
+  .task-item {
+    display: none;
+  }
+  .tasks-wrapper {
+    padding: 30px 0;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 8px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    color: var(--colortextos);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .task:hover {
+    transform: translatex(2px);
+  }
+  .task label {
+    cursor: pointer;
+  }
+  label .label-text {
+    position: relative;
+  }
+  label .label-text:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    left: -24px;
+    transition: 0.2s ease;
+  }
+  
+  .task-item:checked + label .label-text:before {
+    background-color: var(--colorfondo);
+    border: 1px solid var(--colortitulos);
+  }
+  .tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+  }
+  .tag.approved {
+    background-color: var(--tag-color-one);
+    color: lightgreen;
+  }
+  .tag.progress {
+    background-color: var(--tag-color-two);
+    color: gold;
+  }
+  .tag.review {
+    background-color: var(--tag-color-three);
+    color: red;
+  }
+  .tag.waiting {
+    background-color: var(--tag-color-four);
+    color: lightskyblue;
+  }
+  
+  .upcoming {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* ESTADO PUJA */
+  .estadoPuja{
+    margin:10px auto;
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: block;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 10px 5px var(--colortextos);
+}
+
+
+.pujaActiva{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid  rgb(255, 255, 255);
+}
+
+.pujaActiva:first-of-type{
+    margin-top: 35px;
+}
+
+.pujaActiva > a{
+    text-decoration: none;
+    color: var(--colortextos);
+}
+
+.pujaActiva:hover{
+    background-color: var(--colorfondo);
+    /**border: 1.5px solid  var(--colortitulos);*/
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.aceptada{
+    text-transform: uppercase;
+    color: rgb(88, 249, 88);
+    font-weight: bolder;
+}
+.rechazada{
+    text-transform: uppercase;
+    color: rgb(253, 62, 62);
+    font-weight: bolder;
+}
+.activo{
+    color: lightskyblue;
+}
+.cerrado{
+    color: gold;
+}
+
+.linea {
+    border-top: 1px solid rgb(212, 212, 212);
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+/* CONSULTAR CUENTA */
+.consultaCuenta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.articuloConsulta{
+  display: flex;
+  width: 50%;
+  padding: 50px;
+  box-shadow: 0px 10px 10px 3px var(--colortextos);
+  overflow: auto;
+  justify-content: center;
+  background-color: white;
+  border-color: var(--colorfondofooter);
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+.articuloConsulta h2{
+  display: flex;
+  color:var(--colortitulos);
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: large;
+  text-transform: uppercase;
+  justify-content: center;
+}
+p{
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#volcar{
+  display: flex;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: medium;
+  width: 260px;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 20px;
+  color: var(--colortextos);
+  background-color: aliceblue;
+  border-color: var(--colortitulos);
+  justify-content: center;
+}
+#volcar:hover{
+  background-color: var(--colortitulos);
+  border-color: var(--colortextos);
+  color: aliceblue;
+}
+
+#dinero{
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 /*footer*/
@@ -606,7 +1098,7 @@ footer{
     left: 0px;
     bottom: 0px;
     margin-top: 50px;
-    position: relative;
+    display: flex;
 }
 footer div{
     display: inline;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeetProject</title>
+    <title>MeetProject - Pagar</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
                 <li><a href="index.html#verofertas">Ver ofertas</a></li>
                 <li><a href="index.html#aboutus">About us</a></li>
                 <li><a href="../indexcontacto/index.html">Contacto</a></li>
-                <li><a href="">Manual usuario</a></li>
             </ul>
         </div>
         <a href="index.html"><img src="images/logo.png" alt=""></a>
@@ -28,8 +27,8 @@
     </header>
     <main>
         <div class="login">
-            <form action="menu_usuario.html" class="form">
-                <h1 class="title">Inicio sesión</h1>
+            <form action="pagovalidado.html" class="form">
+                <h1 class="title">Pago</h1>
 
                 <div class="inputContainer">
                   <input type="email" class="input" placeholder="Email">
@@ -41,24 +40,23 @@
                 </div>
           
                 <div class="inputContainer">
-                  <input type="password" class="input" placeholder="Contraseña">
-                  <label for="" class="label">Contraseña</label>
+                  <input type="text" class="input" placeholder="Apellidos">
+                  <label for="" class="label">Apellidos</label>
                 </div>
-                <div class="selector">
-                    <div class="toggle-border">
-                        <input id="one" type="checkbox">
-                        <label for="one">
-                          <div class="handle"></div>
-                        </label>
-                    </div>
+          
+                <div class="inputContainer">
+                  <input type="number" class="input" placeholder="Número tarjeta de credito" pattern="[0-9]{13,16}">
+                  <label for="" class="label">Metodo de pago</label>
                 </div>
 
-
-                <input type="submit" class="submitBtn" value="Iniciar sesión">
-
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="Cupón de descuento" pattern="[A-Z]{5}">
+                    <label for="" class="label">Cupón de descuento</label>
+                  </div>
+                <input type="submit" class="submitBtn" value="Pagar">
               </form>
 
-        </div> 
+        </div>
     </main>
     <footer>
         <div>

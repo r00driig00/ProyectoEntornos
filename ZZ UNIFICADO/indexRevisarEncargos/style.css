@@ -173,7 +173,6 @@ button{
     border: 2px solid black;
 }
 
-
 /*footer*/
 footer{
     background-color: var(--colorfondofooter);
@@ -184,7 +183,6 @@ footer{
     display: flex;
     left: 0px;
     bottom: 0px;
-    
 }
 footer div{
     display: inline;
@@ -202,75 +200,138 @@ footer ul{
 }
 footer a{
     color: var(--colorfondooscuro);
-    text-decoration: none;
 }
 
-/* MAIN */
-main{
-    position: relative;
-}
-h1{
-    margin: 40px;
-    color:var(--colortitulos);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: normal;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-}
 
-article{
-    width: 50%;
-    margin-top: 50px;
-    margin-left: 363px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    padding: 50px;
-    box-shadow: 0px 10px 10px 3px var(--colortextos);
-    overflow: auto;
+/**MAIN*/
+
+.revisarEncargos {
+    margin: 15px;
+    margin-bottom: 100px;
     justify-content: center;
-    background-color: white;
-    border-color: var(--colorfondofooter);
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-article h2{
-    color:var(--colortitulos);
-    margin: 10px;
-    margin-bottom: 20px;
-    font-size: large;
-    text-align: center;
-    text-transform: uppercase;
-}
-p{
-    margin: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    background-color:#fff;
+  }
 
-#volcar{
-    display: inline;
-    margin-left: 250px;
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px 20px 0 20px;
+  }
+  
+  .page-content .header {
+    font-size: 26px;
+    color: var(--colortitulos);
     margin-top: 30px;
-    border: 1px solid black;
-    text-decoration: none;
-    font-size: medium;
-    width: 260px;
-    text-transform: uppercase;
-    padding: 5px;
-    border-radius: 20px;
+  }
+  
+  .content-categories {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  .nav-item {
+    display: none;
+  }
+  
+  .category {
+    font-weight: 500;
+    color: var(--secondary-color);
+    border-bottom: 1px solid #ddd;
+    transition: 0.4s ease-in;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+  
+  #opt-1:checked + label,
+  #opt-2:checked + label,
+  #opt-3:checked + label,
+  #opt-4:checked + label {
+    color: var(--colortitulos));
+    border-bottom: 2px solid var(--checkbox-color);
+  }
+  
+  
+  .task-item {
+    display: none;
+  }
+  .tasks-wrapper {
+    padding: 30px 0;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 8px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 30px;
     color: var(--colortextos);
-    background-color: aliceblue;
-    border-color: var(--colortitulos);
-    text-align: center;
-}
-#volcar:hover{
-    background-color: var(--colortitulos);
-    border-color: var(--colortextos);
-    color: aliceblue;
-}
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .task:hover {
+    transform: translatex(2px);
+  }
+  .task label {
+    cursor: pointer;
+  }
+  label .label-text {
+    position: relative;
+  }
+  label .label-text:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    left: -24px;
+    transition: 0.2s ease;
+  }
+  
+  .task-item:checked + label .label-text:before {
+    background-color: var(--colorfondo);
+    border: 1px solid var(--colortitulos);
+  }
+  .tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+  }
+  .tag.approved {
+    background-color: var(--tag-color-one);
+    color: lightgreen;
+  }
+  .tag.progress {
+    background-color: var(--tag-color-two);
+    color: gold;
+  }
+  .tag.review {
+    background-color: var(--tag-color-three);
+    color: red;
+  }
+  .tag.waiting {
+    background-color: var(--tag-color-four);
+    color: lightskyblue;
+  }
+  
+  .upcoming {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 
-#dinero{
-    font-weight: bolder;
-    font-size: 25px;
-}
+

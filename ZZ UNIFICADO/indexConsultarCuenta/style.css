@@ -173,160 +173,7 @@ button{
     border: 2px solid black;
 }
 
-/* MAIN */
-main{
-    position: relative;
-}
-h1{
-    margin: 40px;
-    color:var(--colortitulos);
-    font-size: normal;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-}
-section {
-    margin: 15px auto;
-    width: 65%;
-    height: 600px;
-    justify-content: center;
-    height: 633px;
-}
 
-article{
-    width: 45%;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 0 6px 0 #0088bb;
-    overflow: auto;
-    float: left;
-    justify-content: center;
-    background-color: var(--colorfondo);
-    font-family:'Courier New', Courier, monospace;
-}
-article h2{
-    color:var(--colortitulos);
-    font-size: smaller;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-p{
-    margin-top: 10px;
-}
-.puja{
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-}
-.aceptar{
-    display: block;
-    border: 1px solid black;
-    text-decoration: none;
-    font-size: large;
-    text-transform: uppercase;
-    padding: 3px;
-    border-radius: 20px;
-    color: black;
-    text-align: center;
-}
-.aceptar:hover{
-    background-color: var(--colorfondofooter);
-    color: var(--colorfondooscuro);
-}
-
-
-/* FORM */
-.pago {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 765px;
-  }
-  .form {
-    background-color: white;
-    width: 400px;
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-shadow: 0 10px 25px var(--colortitulos);
-  }
-  
-  .title {
-    font-size: 50px;
-    margin-bottom: 50px;
-  }
-  .inputContainer {
-    position: relative;
-    height: 45px;
-    width: 90%;
-    margin-bottom: 17px;
-  }
-  .input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #DADCE0;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
-  }
-  
-  /* Hide the placeholder texts (a) */
-  
-  ::placeholder {
-    color: #DADCE0;
-  }
-  .label {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 0 4px;
-    background-color: white;
-    color: transparent;
-    font-size: 16px;
-    transition: 0.5s;
-    z-index: 0;
-  }
-  .submitBtn {
-    display: block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: var(--colortitulos);
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-  }
-  
-  .submitBtn:hover {
-    background-color: var(--colortitulos);
-    transform: translateY(-2px);
-  }
-  .input:focus + .label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--colortitulos);
-  }
-  .input:focus {
-    border: 2px solid var(--colortitulos);
-  }
-
-/* Pago valido */
-.validado{
-    margin-top: 300px;
-    height: 465px;
-}
 /*footer*/
 footer{
     background-color: var(--colorfondofooter);
@@ -356,4 +203,65 @@ footer ul{
 footer a{
     color: var(--colorfondooscuro);
     text-decoration: none;
+}
+
+/* MAIN */
+.consultaCuenta{
+    position: relative;
+}
+
+article{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 363px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 50px;
+    box-shadow: 0px 10px 10px 3px var(--colortextos);
+    overflow: auto;
+    justify-content: center;
+    background-color: white;
+    border-color: var(--colorfondofooter);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+article h2{
+    color:var(--colortitulos);
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: large;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#volcar{
+    display: inline;
+    margin-left: 250px;
+    margin-top: 30px;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: medium;
+    width: 260px;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--colortextos);
+    background-color: aliceblue;
+    border-color: var(--colortitulos);
+    text-align: center;
+}
+#volcar:hover{
+    background-color: var(--colortitulos);
+    border-color: var(--colortextos);
+    color: aliceblue;
+}
+
+#dinero{
+    font-weight: bolder;
+    font-size: 25px;
 }
