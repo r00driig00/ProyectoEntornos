@@ -211,7 +211,7 @@ h1{
     letter-spacing: 20px;
     margin: 50px auto;
 }
-form{
+.crearproyecto{
     height: 30rem;
     background-color: white;
     margin: 80px auto;
@@ -220,28 +220,28 @@ form{
     border: 1px solid var(--colortitulo);
     justify-content: center;
 }
-.campo{
+.crearproyecto > .campo{
     display: flex;
     margin-bottom: 2rem;
 }
-.campo_label{
+.crearproyecto > .campo_label{
     flex: 0 0 9rem;
     text-align:left;
     padding-right: 2rem;
     font-family: 'PT Sans', sans-serif;
 }
-.campo_field{
+.crearproyecto > .campo_field{
     flex: 1;
     border: 1px solid #e1e1e1;
     font-family: 'PT Sans', sans-serif;
 }
-.campo_field textarea{
+.crearproyecto > .campo_field textarea{
     height: 20rem;
 }
-textarea {
+.crearproyecto > textarea {
     resize: none;
 }
-input[type=submit]{
+.crearproyecto >  input[type=submit]{
     background-color: var(--colorbotones);
     color:var(--colorfondooscuro);
     font-family: 'PT Sans', sans-serif;

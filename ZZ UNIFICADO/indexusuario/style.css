@@ -156,7 +156,7 @@ button{
     line-height:32px;
     text-transform: uppercase;
 }
-#boton1{
+#usuario{
     width: 40px;
     height: 40px;
     background-image: url(images/usuario.png);
@@ -201,11 +201,15 @@ footer a{
     color: var(--colorfondooscuro);
 }
 
-/*Main*/
-main{
-    margin-top: 125px;
-}
+/*MENU USUARIO*/
 
+.menu_usuario{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 60vh;
+}
 .titulo-seccion{
     text-align: center;
     font-size: 35px;

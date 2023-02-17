@@ -26,26 +26,26 @@
         </p>
     </header>
     <main>
-        <section class="contenedor">
-            <h2 class="titulo-seccion">Menú de elección</h2>
-            <div class="menu">
-                <a href="">
-                    <div class="opcionmenu">
-                        <h3>Crear proyecto</h3>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="opcionmenu">
-                        <h3>Aceptar empresas</h3>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="opcionmenu">
-                        <h3>Pagar</h3>
-                    </div>
-                </a>
-            </div>
-        </section>        
+        <section class="proyecto">
+            <h1>
+                crea tu primer proyecto
+            </h1>
+            <form action="" class="crearproyecto">
+                <div class="campo">
+                    <label for="Titulo" class="campo_label">Titulo del proyecto</label>
+                    <input class="campo_field" type="text">
+                </div>
+                <div class="campo">
+                    <label for="explicacion" class="campo_label">Explica tu proyecto</label>
+                    <textarea class="campo_field" name="explicacion" id="explicacion" cols="30" rows="10"></textarea>
+                </div>
+                <div class="campo">
+                    <label for="presupuesto" class="campo_label">Indica su presupuesto máximo</label>
+                    <input class="campo_field" type="number" name="presupuesto" id="presupuesto">
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
     <footer>
         <div>
@@ -58,5 +58,8 @@
             <li><a href="">Contacto</a></li>
         </ul>
     </footer>
+</body>
+</html>
+    
 </body>
 </html>
