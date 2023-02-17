@@ -174,7 +174,7 @@ button{
 #usuario{
     width: 40px;
     height: 40px;
-    background-image: url(images/usuario.png);
+    background-image: url(../images/usuario.png);
     background-size: cover;
     background-position: center;
     color:var(--colorfondooscuro);
@@ -543,7 +543,7 @@ button{
     font-size: 20px;
     width: 10em;
     height: 10em;
-    background-image: url(images/menu_usuario_01.png);
+    background-image: url(../images/menu_usuario_01.png);
     background-size: cover;
     background-position: center;
     color:var(--colorfondooscuro);
@@ -1021,6 +1021,67 @@ span.app {
     height: 2px;
     padding: 0;
     margin: 20px auto 0 auto;
+}
+
+/* CONSULTAR CUENTA */
+.consultaCuenta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article{
+  display: flex;
+  width: 50%;
+  padding: 50px;
+  box-shadow: 0px 10px 10px 3px var(--colortextos);
+  overflow: auto;
+  justify-content: center;
+  background-color: white;
+  border-color: var(--colorfondofooter);
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+article h2{
+  display: flex;
+  color:var(--colortitulos);
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: large;
+  text-transform: uppercase;
+  justify-content: center;
+}
+p{
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#volcar{
+  display: flex;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: medium;
+  width: 260px;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 20px;
+  color: var(--colortextos);
+  background-color: aliceblue;
+  border-color: var(--colortitulos);
+  justify-content: center;
+}
+#volcar:hover{
+  background-color: var(--colortitulos);
+  border-color: var(--colortextos);
+  color: aliceblue;
+}
+
+#dinero{
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 /*footer*/
