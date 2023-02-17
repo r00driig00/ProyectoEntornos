@@ -39,7 +39,6 @@ header p{
     position:absolute;
     right: 0px;
 }
-
 /*ABRIRCERRAR*/
 input#abrir-cerrar {
     visibility:hidden;
@@ -203,146 +202,79 @@ footer a{
 }
 
 
-/**MAIN*/
-main h1{
-    margin: 40px;
-    margin-bottom: 0;
+/*Main*/
+h1{
+    margin-top:10px;
+    margin-bottom: 50px;
     color:var(--colortitulos);
-    font-size: 30px;
+    font-size: normal;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 20px;
+    letter-spacing: 5px;
+    }
+
+.estadoPuja{
+    margin:10px auto;
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: block;
+    flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 55px;
+    box-shadow: 0px 5px 10px 5px var(--colortextos);
 }
 
-main {
-    margin: 15px;
-    margin-bottom: 100px;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    background-color:#fff;
-  }
 
-  .page-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 40px 20px 0 20px;
-  }
-  
-  .page-content .header {
-    font-size: 26px;
-    color: var(--colortitulos);
-    margin-top: 30px;
-  }
-  
-  .content-categories {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0;
-  }
-  
-  .nav-item {
-    display: none;
-  }
-  
-  .category {
-    font-weight: 500;
-    color: var(--secondary-color);
-    border-bottom: 1px solid #ddd;
-    transition: 0.4s ease-in;
-    padding: 20px 30px;
-    cursor: pointer;
-  }
-  
-  #opt-1:checked + label,
-  #opt-2:checked + label,
-  #opt-3:checked + label,
-  #opt-4:checked + label {
-    color: var(--colortitulos));
-    border-bottom: 2px solid var(--checkbox-color);
-  }
-  
-  
-  .task-item {
-    display: none;
-  }
-  .tasks-wrapper {
-    padding: 30px 0;
-    flex: 1;
-    overflow-y: auto;
-    height: 100%;
-    padding-right: 8px;
-  }
-  
-  .task {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 16px;
-    padding-left: 30px;
+.pujaActiva{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid  rgb(255, 255, 255);
+}
+
+.pujaActiva:first-of-type{
+    margin-top: 35px;
+}
+
+.pujaActiva > a{
+    text-decoration: none;
     color: var(--colortextos);
-    font-size: 13px;
-    font-weight: 500;
-  }
-  .task:hover {
-    transform: translatex(2px);
-  }
-  .task label {
-    cursor: pointer;
-  }
-  label .label-text {
-    position: relative;
-  }
-  label .label-text:before {
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    left: -24px;
-    transition: 0.2s ease;
-  }
-  
-  .task-item:checked + label .label-text:before {
+}
+
+.pujaActiva:hover{
     background-color: var(--colorfondo);
-    border: 1px solid var(--colortitulos);
-  }
-  .tag {
-    font-size: 10px;
-    padding: 4px 8px;
-    border-radius: 20px;
-  }
-  .tag.approved {
-    background-color: var(--tag-color-one);
-    color: lightgreen;
-  }
-  .tag.progress {
-    background-color: var(--tag-color-two);
-    color: gold;
-  }
-  .tag.review {
-    background-color: var(--tag-color-three);
-    color: red;
-  }
-  .tag.waiting {
-    background-color: var(--tag-color-four);
+    /**border: 1.5px solid  var(--colortitulos);*/
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.aceptada{
+    text-transform: uppercase;
+    color: rgb(88, 249, 88);
+    font-weight: bolder;
+}
+.rechazada{
+    text-transform: uppercase;
+    color: rgb(253, 62, 62);
+    font-weight: bolder;
+}
+.activo{
     color: lightskyblue;
-  }
-  
-  .upcoming {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+}
+.cerrado{
+    color: gold;
+}
+
+.linea {
+    border-top: 1px solid rgb(212, 212, 212);
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
   }
 
-
+    
